@@ -9,12 +9,10 @@ feedbackForm.addEventListener(
   throttle(event => {
     if (event.target.name === 'email') {
       complitedForm.email = event.target.value;
-      console.log(complitedForm);
     }
 
     if (event.target.name === 'message') {
       complitedForm.message = event.target.value;
-      console.log(complitedForm);
     }
 
     localStorage.setItem('feedback-form-state', JSON.stringify(complitedForm));
